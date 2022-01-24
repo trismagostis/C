@@ -15,6 +15,7 @@ int main() {
         cout << "Podaj element " << i << endl;
         cin >> a;
         wektor.push_back(a);
+
     }
 
     for (int i =0; i < elementy; i++) {
