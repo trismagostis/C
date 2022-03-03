@@ -1,27 +1,15 @@
-
 #include <iostream>
-#include <cmath>
-#include <vector>
+#include <string>
 using namespace std;
-
-int main() {
-
-    vector <int> wektor;
-    cout << "Podaj ile elementow" << endl;
-    int elementy =0;
-    cin >> elementy;
-    int a;
-    for (int i =0; i < elementy; i++) {
-        cout << "Podaj element " << i << endl;
-        cin >> a;
-        wektor.push_back(a);
-
-    }
-
-    for (int i =0; i < elementy; i++) {
-        cout << "Element: " << i << ": " << wektor[i] << endl;
-    }
-
+union Student {
+    char tab[20] ;
+    int ocena;
+};
+int main()
+{
+    Student Kamil;
+    Kamil {.ocena=4};
+    cout << sizeof(Student);
     return 0;
 }
 
