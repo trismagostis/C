@@ -1,15 +1,18 @@
 #include <iostream>
-#include <string>
+#include <cstring>
 using namespace std;
-union Student {
-    char tab[20] ;
+struct Student {
+    int imie ;
     int ocena;
 };
 int main()
 {
-    Student Kamil;
-    Kamil {.ocena=4};
-    cout << sizeof(Student);
+    Student uczen;
+    uczen.ocena = 4;
+    uczen.imie=3;
+
+    cout << sizeof(Student)<<endl;
+    //cout << uczen.ocena;
     return 0;
 }
 
